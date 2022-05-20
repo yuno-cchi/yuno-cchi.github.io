@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,14 @@
 </head>
 
 <body>
-    <h>Welcome back, Yuno.</h>
-    <hr>
-    <p>This is a placeholder startpage.</p>
+    <div id="main"">
+        <div id="clock">
+            <h1 id="time"></h1>
+            <script src="/scripts/clock.js"></script>
+        </div>   
+        <div id="text">
+            <p id="greeting">Welcome back, Yuno.</p>
+        </div>
+    </div>
 </body>
 </html>

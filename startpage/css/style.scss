@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+@mixin noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#main
+{
+    position: relative;
+}
+
+#clock 
+{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 450%;
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;     
+    margin: 0 auto;
+    @include noSelect();
+}
+
+#text 
+{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 350%;
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+    margin: 0 auto;
+    @include noSelect();
+}
+
+body
+{
+    background: #000000;
+}
