@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
 
-@mixin noSelect {
+
+@mixin noSelect() {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     user-select: none;
@@ -12,31 +13,72 @@
 #main
 {
     position: relative;
+    margin-top: 50px;
+
+    /*border-style: solid; /*debug*/
+    /*border-color: aqua; /*debug*/
 }
 
 #clock 
 {
-    display: flex;
-    justify-content: center;
+    /*display: flex;*/
+    text-align: center;
     color: #ffffff;
-    font-size: 450%;
+    font-size: calc(min(8vh,7vw));
     font-family: 'Roboto Mono', 'Courier New', Courier, monospace;     
     margin: 0 auto;
+
+    height: 10vh;
     @include noSelect();
+
+    /*border-style: dotted; /*debug*/
+    /*border-color: #ffffff; /*debug*/
 }
 
-#text 
+.text 
 {
     display: flex;
     justify-content: center;
-    color: #ffffff;
-    font-size: 350%;
+    color: #f5f5f5;
+    font-size: calc(min(6vh, 5vw));
     font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
     margin: 0 auto;
+    height: calc(min(150px,80vh));
     @include noSelect();
+    /*border-style: dotted; /*debug*/
+    /*border-color: #ffffff; /*debug*/ 
 }
 
 body
 {
-    background: #000000;
+    background: #0f0f0f;
+}
+
+.shortcuts
+{   
+    border-style: solid;
+    border-color:whitesmoke;
+    color: #f5f5f5;
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+    font-size: large;
+    display: inline-block;
+    margin: 0 17.5px;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: left;
+    width: 175px;
+    @include noSelect();
+}
+
+#shortcutsContainer
+{   
+    /*border-style: solid;/*debug*/
+    /*border-color: red;/*debug*/
+    text-align: center;
+}
+
+a
+{
+    color: inherit;
+    text-decoration: inherit;
 }

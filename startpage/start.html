@@ -6,16 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yuno's Startpage</title>
-</head>
+</head> 
 
 <body>
-    <div id="main"">
+    <div id="main">
         <div id="clock">
             <h1 id="time"></h1>
-            <script src="/scripts/clock.js"></script>
+            <script src="https://yuno-cchi.github.io/startpage/scripts/clock.js"></script>
+        </div>
+        <div class="text">
+            <p id="date"></p>
+            <script src="https://yuno-cchi.github.io/sartpage/scripts/calendar.js"></script>
         </div>   
-        <div id="text">
+        <div class="text">
             <p id="greeting">Welcome back, Yuno.</p>
+            <!--Insert script here that changes the greeting dependng on the time of day-->
+        </div>
+    </div>
+    <div id="shortcutsContainer">
+        <div class="shortcuts" id="shortcuts1">
+            <br>
+            <u>School</u>
+            <ul>
+                <li><a href="https://ntulearn.ntu.edu.sg/">NTULearn</a></li>
+                <li><a href="https://wish.wis.ntu.edu.sg/pls/webexe/AUS_STARS_PLANNER.time_table">STARS</a></li>
+                <li><a href="https://www.wolframalpha.com/">WolframAlpha</a></li>
+                <li><a href="https://www.linkedin.com/learning/">Lynda</a></li>
+            </ul>
+            <br>
+        </div>
+        <div class="shortcuts" id="shortcuts2">
+            <br>
+            <u>Google</u>
+            <ul>
+                <li><a href="https://mail.google.com/">Gmail</a></li>
+                <li><a href="https://drive.google.com/">Drive</a></li>
+                <li><a href="https://docs.google.com/">Docs</a></li>
+                <li><a href="https://www.youtube.com/">YouTube</a></li>
+            </ul>
+            <br>
+        </div>
+        <div class="shortcuts" id="shortcuts3">
+            <br>
+            <u>Chess</u>
+            <ul>
+                <li><a href="https://www.chess.com/">chess.com</a></li>
+                <li><a href="https://www.lichess.org/">lichess</a></li>
+                <li><a href="https://www.lichess.org/analysis">analysis♔</a></li>
+                <li><a href="https://www.lichess.org/paste">paste♔</a></li>
+            </ul>
+            <br>
+        </div>
+        <div class="shortcuts" id="shortcuts4">
+            <br>
+            <u>Fun</u>
+            <ul>
+                <li><a href="https://gbf-raidfinder-tw.herokuapp.com/">RaidFinder</a></li>
+                <li><a href="https://gbf.wiki/">GBFWiki</a></li>
+                <li><a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki">StardewWiki</a></li>
+                <li><a href="https://tetr.io/">Tetr.io</a></li>
+            </ul>
+            <br>
         </div>
     </div>
 </body>

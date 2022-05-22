@@ -11,6 +11,8 @@ function displayTime() {
     } else if (h > 12) {
         h -= 12;
         twelveHour = "PM";
+    } else if (h == 12) {
+        twelveHour = "PM";
     }
 
     // we add padding zeroes for style cuz Date() doesn't do that

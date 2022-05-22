@@ -12,6 +12,9 @@ function displayTime() {
         h -= 12;
         twelveHour = "PM";
     }
+    else if (h == 12) {
+        twelveHour = "PM";
+    }
     // we add padding zeroes for style cuz Date() doesn't do that
     var hh = (h < 10) ? "0" + h.toString() : h.toString();
     var mm = (m < 10) ? "0" + m.toString() : m.toString();
