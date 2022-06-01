@@ -105,7 +105,19 @@ function displayDate() {
     console.log("Welcome back. Today is " + dayToday);
 
     document.getElementById("date").innerHTML = dayToday;
-    let t = setTimeout(function(){ displayDate() }, 1000);
+    
+    // update eveery hour 
+    let refreshInterval:number = 3600000;
+    // but if it's 11pm, update every minute
+    if (today.getHours() == 23) {
+        refreshInterval = 60000;
+    }
+    // but if it's 11.59pm, update every second
+    if (today.getHours() == 23 && today.getMinutes() == 59) {
+        refreshInterval = 1000
+    }
+
+    let t = setTimeout(function(){ displayDate() }, refreshInterval);
 }
 
 displayDate();

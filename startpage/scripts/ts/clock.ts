@@ -27,7 +27,7 @@ function displayTime() {
 
     // repeat displayTime() every 500ms 
     let t = setTimeout(function(){ displayTime() }, 500);
-    // i honestly don't know what this means tbh
+
 }
 
 displayTime();
