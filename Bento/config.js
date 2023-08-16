@@ -13,8 +13,8 @@ const CONFIG = {
 	// General
 	name: 'Yuno',
 	imageBackground: false,
-	openInNewTab: true,
-	twelveHourFormat: false,
+	openInNewTab: false,
+	twelveHourFormat: true,
 
 	// Greetings
 	greetingMorning: 'Good morning!',
