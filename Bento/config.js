@@ -221,8 +221,8 @@ const CONFIG = {
 					link: 'https://monkeytype.com/',
 				},
 				{
-					name: 'GitHub',
-					link: 'https://github.com/',
+					name: 'YouTube',
+					link: 'https://www.youtube.com/',
 				},
 			],
 		},
