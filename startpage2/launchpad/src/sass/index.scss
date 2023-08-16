@@ -1,0 +1,42 @@
+body {
+    background: rgb(30,30,30);
+    color: rgb(230,230,230);
+}
+
+
+#left-half {
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    //debug
+    border-style: dotted;
+    border-color: royalblue;
+}
+
+#right-half {
+    grid-area: right;
+    justify-content: center;
+
+    // debug //
+    border-style: dotted;
+    border-color: pink;
+}
+
+@media (orientation: landscape) {
+    #content {
+        display:grid;
+        grid-template-areas: 'left left right';
+    }
+}
+
+@media (orientaion: portrait) {
+    #content {
+        display:grid;
+    }
+
+    #left-half {
+        height:40%;
+    }
+}
