@@ -17,10 +17,10 @@ const CONFIG = {
 	twelveHourFormat: true,
 
 	// Greetings
-	greetingMorning: 'Good morning!',
+	greetingMorning: 'Good morning,',
 	greetingAfternoon: 'Good afternoon,',
 	greetingEvening: 'Good evening,',
-	greetingNight: 'Go to Sleep!',
+	greetingNight: 'Go to sleep,',
 
 	// Layout
 	bentoLayout: 'lists', // 'bento', 'lists', 'buttons'
@@ -36,10 +36,10 @@ const CONFIG = {
 	defaultLongitude: '103.683',
 
 	// Autochange
-	autoChangeTheme: true,
+	autoChangeTheme: false,
 
 	// Autochange by OS
-	changeThemeByOS: true,
+	changeThemeByOS: false,
 
 	// Autochange by hour options (24hrs format, string must be in: hh:mm)
 	changeThemeByHour: false,
@@ -213,8 +213,8 @@ const CONFIG = {
 					link: 'https://gbf.wiki//',
 				},
 				{
-					name: 'BBCF Dustloop',
-					link: 'https://www.dustloop.com/wiki/index.php?title=BBCF',
+					name: 'noises.online',
+					link: 'https://noises.online/player.php?g=ad2ca3cb2cc3cd3ce4cg4'
 				},
 				{
 					name: 'Monkeytype',
